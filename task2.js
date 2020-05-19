@@ -18,12 +18,6 @@ const users = [
 //   callback(updatedUsers);
 // };
 
-// Сейчас работает так:
-
-// toggleUserState(users, "Mango", logger);
-// toggleUserState(users, "Lux", logger);
-
-
 
 const toggleUserState = (allUsers, userName) => {
   const promise = new Promise((resolve) => {
@@ -37,6 +31,12 @@ const toggleUserState = (allUsers, userName) => {
 };
   
 const logger = (updatedUsers) => console.table(updatedUsers);
+
+
+// Сейчас работает так:
+
+// toggleUserState(users, "Mango", logger);
+// toggleUserState(users, "Lux", logger);
 
 
 // Должно работать так:
